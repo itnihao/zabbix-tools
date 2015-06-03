@@ -108,7 +108,7 @@ class Client(object):
         logging.debug("ENTERED: Client.__init__")
         self.options = options
         self.template = None    # Placeholder for a template we may never use
-        self.z = zabbix_api.ZabbixAPI(server=options.url,user=options.httpuser,password=options.httppasswd, timeout=timeout)
+        self.z = zabbix_api.ZabbixAPI(server=options.url,user=options.httpuser,passwd=options.httppasswd, timeout=timeout)
         if not getattr(self.z, 'screenitem'):
             print dir(self.z)
             screenitem_error()
