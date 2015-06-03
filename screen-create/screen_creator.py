@@ -114,7 +114,7 @@ class Client(object):
             screenitem_error()
 
         self.z.set_log_level(logging.root.level)
-        self.z.login(user=options.username, password=options.password)
+        self.z.login(httpuser=options.httpuser, httppasswd=options.httppasswd, user=options.username, password=options.password)
         return
 
     def get_screen(self, identifier):

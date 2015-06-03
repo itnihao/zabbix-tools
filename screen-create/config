@@ -2,3 +2,6 @@
 username='user'
 password='passwd'
 url='http://zabbix.itnihao.com'
+httpuser='passwd'
+httppasswd='user'
+
